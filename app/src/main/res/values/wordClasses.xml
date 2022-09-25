@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="wordClasses">
+        <item>adjektiv</item>
+        <item>verb</item>
+        <item>adverb</item>
+        <item>en</item>
+        <item>ett</item>
+        <item>test</item>
+    </string-array>
+</resources>
