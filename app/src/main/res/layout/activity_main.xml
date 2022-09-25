@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/iWordList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="updateWords"
+        android:text="Select Word Class"
+        android:textAlignment="center"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newWord" />
+
+    <EditText
+        android:id="@+id/newWord"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="60dp"
+        android:textAlignment="center"
+        android:textSize="36dp"
+        app:layout_constraintEnd_toStartOf="@+id/Add"
+        app:layout_constraintHorizontal_bias="0.258"
+        app:layout_constraintStart_toEndOf="@+id/btnBack"
+        app:layout_constraintTop_toBottomOf="@+id/classSelector" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:onClick="back"
+        android:text="@string/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/newWord" />
+
+    <Button
+        android:id="@+id/Add"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/add"
+        android:onClick="addWord"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btnBack"
+        app:layout_constraintTop_toBottomOf="@+id/classSelector" />
+
+    <Button
+        android:id="@+id/Seek"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Seek"
+        android:onClick="seek"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btnBack"
+        app:layout_constraintTop_toBottomOf="@+id/Add" />
+
+    <Spinner
+        android:id="@+id/classSelector"
+        android:layout_width="320dip"
+        android:layout_height="100dip"
+        android:dropDownWidth="match_parent"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Count"
+        android:layout_width="150dip"
+        android:layout_height="50dip"
+        android:text="Count"
+        android:textAlignment="gravity"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/classSelector"
+        app:layout_constraintTop_toBottomOf="@+id/ind" />
+
+    <TextView
+        android:id="@+id/ind"
+        android:layout_width="150dip"
+        android:layout_height="50dip"
+        android:text="Ind"
+        android:textAlignment="gravity"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/classSelector"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
