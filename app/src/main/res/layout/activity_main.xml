@@ -5,65 +5,196 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+    android:hei
 
     <TextView
-        android:id="@+id/iWordList"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="updateWords"
-        android:text="Select Word Class"
+        android:id="@+id/i_w0"
+        android:layout_width="240dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:onClick="lookup_1"
+        android:text="w0"
         android:textAlignment="center"
-        android:textSize="60sp"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toStartOf="@+id/iForward"
+        app:layout_constraintStart_toEndOf="@+id/iBack"
+        app:layout_constraintTop_toBottomOf="@+id/newWord" />
+
+    <TextView
+        android:id="@+id/i_w1"
+        android:layout_width="240dp"
+        android:layout_height="60dp"
+        android:onClick="lookup_2"
+        android:text="w1"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toStartOf="@+id/iForward"
+        app:layout_constraintStart_toEndOf="@+id/iBack"
+        app:layout_constraintTop_toBottomOf="@+id/i_w0" />
+
+    <TextView
+        android:id="@+id/i_w2"
+        android:layout_width="240dp"
+        android:layout_height="60dp"
+        android:onClick="lookup_3"
+        android:text="w2"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toStartOf="@+id/iForward"
+        app:layout_constraintStart_toEndOf="@+id/iBack"
+        app:layout_constraintTop_toBottomOf="@+id/i_w1" />
+
+    <TextView
+        android:id="@+id/i_w3"
+        android:layout_width="240dp"
+        android:layout_height="60dp"
+        android:onClick="lookup_4"
+        android:text="w3"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toStartOf="@+id/iForward"
+        app:layout_constraintStart_toEndOf="@+id/iBack"
+        app:layout_constraintTop_toBottomOf="@+id/i_w2" />
+
+    <TextView
+        android:id="@+id/i_w4"
+        android:layout_width="240dp"
+        android:layout_height="60dp"
+        android:onClick="lookup_5"
+        android:text="w4"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toStartOf="@+id/iForward"
+        app:layout_constraintStart_toEndOf="@+id/iBack"
+        app:layout_constraintTop_toBottomOf="@+id/i_w3" />
+
+    <TextView
+        android:id="@+id/i_w5"
+        android:layout_width="240dp"
+        android:layout_height="60dp"
+        android:onClick="lookup_6"
+        android:text="w5"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toStartOf="@+id/iForward"
+        app:layout_constraintStart_toEndOf="@+id/iBack"
+        app:layout_constraintTop_toBottomOf="@+id/i_w4" />
+
+    <TextView
+        android:id="@+id/i_w6"
+        android:layout_width="240dp"
+        android:layout_height="60dp"
+        android:onClick="lookup_7"
+        android:text="w6"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toStartOf="@+id/iForward"
+        app:layout_constraintStart_toEndOf="@+id/iBack"
+        app:layout_constraintTop_toBottomOf="@+id/i_w5" />
+
+    <TextView
+        android:id="@+id/i_w7"
+        android:layout_width="240dp"
+        android:layout_height="60dp"
+        android:onClick="lookup_8"
+        android:text="w7"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toStartOf="@+id/iForward"
+        app:layout_constraintStart_toEndOf="@+id/iBack"
+        app:layout_constraintTop_toBottomOf="@+id/i_w6" />
+
+    <TextView
+        android:id="@+id/iDef"
+        android:layout_width="240dp"
+        android:layout_height="0dp"
+        android:text="Def"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:onClick="toggleMaxPress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/iForward"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/iBack"
+        app:layout_constraintTop_toBottomOf="@+id/i_w7" />
+
+    <TextView
+        android:id="@+id/iBack"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:onClick="back"
+        android:text=""
+        android:textAlignment="viewStart"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newWord" />
+
+    <TextView
+        android:id="@+id/iForward"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="4dp"
+        android:onClick="updateWords"
+        android:text=""
+        android:textAlignment="viewStart"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newWord" />
+
+    <TextView
+        android:id="@+id/iBack"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:onClick="updateWords"
+        android:text=""
+        android:textAlignment="viewStart"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/newWord" />
 
     <EditText
         android:id="@+id/newWord"
-        android:layout_width="0dp"
+        android:layout_width="250dp"
         android:layout_height="80dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:minHeight="60dp"
         android:textAlignment="center"
         android:textSize="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/iBack"
         app:layout_constraintEnd_toStartOf="@+id/Add"
-        app:layout_constraintHorizontal_bias="0.258"
-        app:layout_constraintStart_toEndOf="@+id/btnBack"
         app:layout_constraintTop_toBottomOf="@+id/classSelector" />
 
     <Button
-        android:id="@+id/btnBack"
-        android:layout_width="0dp"
+        android:id="@+id/Hide"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:onClick="back"
-        android:text="@string/back"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/newWord" />
+        android:onClick="hideToggle"
+        android:text="Hide"
+        app:layout_constraintTop_toBottomOf="@+id/Seek" />
+
 
     <Button
         android:id="@+id/Add"
-        android:layout_width="100dp"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:text="@string/add"
+        android:layout_marginEnd="4dp"
         android:onClick="addWord"
+        android:text="@string/add"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/btnBack"
         app:layout_constraintTop_toBottomOf="@+id/classSelector" />
 
     <Button
         android:id="@+id/Seek"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:text="Seek"
+        android:layout_width="80dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="332dp"
         android:onClick="seek"
+        android:text="Seek"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/btnBack"
-        app:layout_constraintTop_toBottomOf="@+id/Add" />
+        app:layout_constraintTop_toBottomOf="@+id/classSelector" />
 
     <Spinner
         android:id="@+id/classSelector"
@@ -93,5 +224,108 @@
         android:textSize="24sp"
         app:layout_constraintStart_toEndOf="@+id/classSelector"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/d1"
+        android:layout_width="39dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="56dp"
+        android:onClick="lookup_1"
+        android:text="1"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Seek"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/d2"
+        android:layout_width="39dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:onClick="lookup_2"
+        android:text="2"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/d1"
+        app:layout_constraintTop_toBottomOf="@+id/Seek"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/d3"
+        android:layout_width="39dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:onClick="lookup_3"
+        android:text="3"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/d2"
+        app:layout_constraintTop_toBottomOf="@+id/Seek"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/d4"
+        android:layout_width="39dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:onClick="lookup_4"
+        android:text="4"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/d3"
+        app:layout_constraintTop_toBottomOf="@+id/Seek"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/d5"
+        android:layout_width="39dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:onClick="lookup_5"
+        android:text="5"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/d4"
+        app:layout_constraintTop_toBottomOf="@+id/Seek"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/d6"
+        android:layout_width="39dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:onClick="lookup_6"
+        android:text="6"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/d5"
+        app:layout_constraintTop_toBottomOf="@+id/Seek"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/d7"
+        android:layout_width="39dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:onClick="lookup_7"
+        android:text="7"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/d6"
+        app:layout_constraintTop_toBottomOf="@+id/Seek"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/d8"
+        android:layout_width="39dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:onClick="lookup_8"
+        android:text="8"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/d7"
+        app:layout_constraintTop_toBottomOf="@+id/Seek"
+        tools:visibility="gone" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
